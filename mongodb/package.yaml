@@ -1,6 +1,9 @@
 title: MongoDB
 author: Dataloop.IO
 version: 1.0.1
+processes:
+    - mongo
+    - mongod
 description: Every metric from mongostat
 icon:
     name: mongodb

@@ -1,6 +1,9 @@
 title: Redis
 author: Dataloop.IO
 version: 1.0.0
+processes:
+    - redis
+    - redis-server
 description: Capacity and throughput metrics showing memory use, instantaneous operations and keyspace information.
 icon:
     name: redis

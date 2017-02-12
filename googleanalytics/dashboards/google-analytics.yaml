@@ -1,0 +1,111 @@
+title: Google Analytics
+period: 86400
+locked: false
+positions:
+  - title: Unique Users
+    data_type: number
+    type: stacked-chart
+    color: maroon
+    icon: true
+    filter: avg
+    legend: true
+    row: 1
+    col: 1
+    size_x: 4
+    size_y: 4
+    metrics:
+      - 'googleanalytics.users.*'
+    series:
+      - metric: 'googleanalytics.users.*'
+        scope:
+          tag: googleanalytics
+  - title: Total Unique Users
+    data_type: number
+    type: number
+    color: maroon
+    icon: true
+    symbol: users
+    filter: sum
+    legend: false
+    row: 1
+    col: 5
+    size_x: 1
+    size_y: 4
+    metrics:
+      - 'googleanalytics.users.*'
+    series:
+      - metric: 'googleanalytics.users.*'
+        scope:
+          tag: googleanalytics
+  - title: Total NEW Users
+    data_type: number
+    type: number
+    color: purple
+    icon: true
+    symbol: user-md
+    filter: sum
+    legend: false
+    row: 1
+    col: 6
+    size_x: 1
+    size_y: 4
+    metrics:
+      - 'googleanalytics.newusers.*'
+    series:
+      - metric: 'googleanalytics.newusers.*'
+        scope:
+          tag: googleanalytics
+  - title: Average Session Duration
+    data_type: number
+    type: number
+    color: green
+    icon: true
+    symbol: clock-o
+    filter: avg
+    legend: false
+    row: 5
+    col: 1
+    size_x: 2
+    size_y: 2
+    metrics:
+      - 'googleanalytics.avgsessionduration.*'
+    series:
+      - metric: 'googleanalytics.avgsessionduration.*'
+        scope:
+          tag: googleanalytics
+  - title: Average Page Load Time
+    data_type: number
+    type: number
+    color: orange
+    icon: true
+    symbol: clock-o
+    filter: avg
+    legend: false
+    row: 5
+    col: 3
+    size_x: 2
+    size_y: 2
+    metrics:
+      - 'googleanalytics.avgpageloadtime.*'
+    series:
+      - metric: 'googleanalytics.avgpageloadtime.*'
+        scope:
+          tag: googleanalytics
+  - title: Highest Bounce Rate
+    data_type: number
+    type: number
+    color: navy
+    icon: true
+    symbol: thumbs-down
+    filter: max
+    legend: false
+    row: 5
+    col: 5
+    size_x: 2
+    size_y: 2
+    metrics:
+      - 'googleanalytics.bouncerate.*'
+    series:
+      - metric: 'googleanalytics.bouncerate.*'
+        scope:
+          tag: googleanalytics

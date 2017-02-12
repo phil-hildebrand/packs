@@ -1,0 +1,11 @@
+title: Apache2
+criteria:
+  - metric: apache2.status
+    scope:
+      tag: apache2
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''

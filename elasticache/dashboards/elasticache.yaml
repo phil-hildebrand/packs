@@ -1,0 +1,95 @@
+title: elasticache
+annotations: []
+period: 3600
+locked: false
+positions:
+  - title: 'aws.elasticache.cache_hits.*'
+    data_type: number
+    type: detailed-chart
+    color: purple
+    icon: true
+    filter: avg
+    legend: false
+    row: 1
+    col: 1
+    size_x: 2
+    size_y: 2
+    series:
+      - metric: 'aws.elasticache.cache_hits.*'
+        scope:
+          tag: elasticache
+  - title: aws.elasticache.replication_lag.max
+    data_type: number
+    type: detailed-chart
+    color: olive
+    icon: true
+    filter: avg
+    legend: false
+    row: 1
+    col: 3
+    size_x: 2
+    size_y: 2
+    series:
+      - metric: aws.elasticache.replication_lag.max
+        scope:
+          tag: elasticache
+  - title: aws.elasticache.curr_connections.max
+    data_type: number
+    type: detailed-chart
+    color: teal
+    icon: true
+    filter: avg
+    legend: false
+    row: 1
+    col: 5
+    size_x: 2
+    size_y: 2
+    series:
+      - metric: aws.elasticache.curr_connections.max
+        scope:
+          tag: elasticache
+  - title: aws.elasticache.cpu_utilization.max
+    data_type: number
+    type: detailed-chart
+    color: blue
+    icon: true
+    filter: avg
+    legend: false
+    row: 3
+    col: 1
+    size_x: 2
+    size_y: 2
+    series:
+      - metric: aws.elasticache.cpu_utilization.max
+        scope:
+          tag: elasticache
+  - title: aws.elasticache.bytes_used_for_cache.max
+    data_type: number
+    type: detailed-chart
+    color: maroon
+    icon: true
+    filter: avg
+    legend: false
+    row: 3
+    col: 3
+    size_x: 2
+    size_y: 2
+    series:
+      - metric: aws.elasticache.bytes_used_for_cache.max
+        scope:
+          tag: elasticache
+  - title: aws.elasticache.swap_usage.max
+    data_type: number
+    type: detailed-chart
+    color: red
+    icon: true
+    filter: avg
+    legend: false
+    row: 3
+    col: 5
+    size_x: 2
+    size_y: 2
+    series:
+      - metric: aws.elasticache.swap_usage.max
+        scope:
+          tag: elasticache

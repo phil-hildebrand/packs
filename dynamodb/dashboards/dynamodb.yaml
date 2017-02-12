@@ -1,0 +1,35 @@
+title: dynamodb
+annotations: []
+period: 3600
+locked: false
+positions:
+  - title: aws.dynamodb.provisioned_read_capacity_units.max
+    data_type: number
+    type: detailed-chart
+    color: aqua
+    icon: true
+    filter: avg
+    legend: false
+    row: 1
+    col: 1
+    size_x: 5
+    size_y: 2
+    series:
+      - metric: aws.dynamodb.provisioned_read_capacity_units.max
+        scope:
+          tag: dynamodb
+  - title: aws.dynamodb.provisioned_write_capacity_units.max
+    data_type: number
+    type: detailed-chart
+    color: blue
+    icon: true
+    filter: avg
+    legend: false
+    row: 3
+    col: 1
+    size_x: 5
+    size_y: 2
+    series:
+      - metric: aws.dynamodb.provisioned_write_capacity_units.max
+        scope:
+          tag: dynamodb

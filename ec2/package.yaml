@@ -1,0 +1,8 @@
+title: ec2
+author: Dataloop.IO
+version: 1.0.0
+description: Dashboards and alert rules for EC2 instances monitored with the AWS integration
+icon:
+    name: ec2
+    background: orange
+    foreground: white
